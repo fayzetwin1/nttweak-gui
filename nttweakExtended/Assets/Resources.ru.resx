@@ -1,0 +1,89 @@
+﻿<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="WelcomeText" xml:space="preserve">
+        <value>Привет мир!</value>
+    </data>
+    <data name="MainPageTitle" xml:space="preserve">
+        <value>Добро пожаловать в NTTweak!</value>
+    </data>
+    <data name="MainPageDescription" xml:space="preserve">
+        <value>С чего начнем?</value>
+    </data>
+    <data name="MainPageAppsButton" xml:space="preserve">
+        <value>Приложения</value>
+    </data>
+    <data name="MainPageAppearanceButton" xml:space="preserve">
+        <value>Внешний вид</value>
+    </data>
+    <data name="MainPageRestartExplorerButton" xml:space="preserve">
+        <value>Перезагрузить проводник</value>
+    </data>
+    <data name="SettingsPageTitle" xml:space="preserve">
+        <value>Настройки</value>
+    </data>
+    <data name="SettingsPageDescription" xml:space="preserve">
+        <value>здесь можно настроить твикер именно так, как вам будет лучше</value>
+    </data>
+    <data name="InfoAboutAppTitle" xml:space="preserve">
+        <value>Информация о приложении</value>
+    </data>
+    <data name="InfoAboutAppDescription" xml:space="preserve">
+        <value>здесь написана информация о приложении и твикере в целом</value>
+    </data>
+    <data name="InfoAboutAppVersionApp" xml:space="preserve">
+        <value>Версия твикера: 0.9-BETA</value>
+    </data>
+    <data name="InfoAboutAppAuthor" xml:space="preserve">
+        <value>Автор твикера: fayzetwin</value>
+    </data>
+    <data name="InfoAboutAppLinks" xml:space="preserve">
+        <value>Ссылки на нас:</value>
+    </data>
+    <data name="InfoAboutAppSupportAuthor" xml:space="preserve">
+        <value>Поддержать автора:</value>
+    </data>
+    <data name="AppsPageDescription" xml:space="preserve">
+        <value>здесь можно установить необходимые приложения</value>
+    </data>
+    <data name="AppsPageTitle" xml:space="preserve">
+        <value>Приложения</value>
+    </data>
+    <data name="EnableButton" xml:space="preserve">
+        <value>Включить</value>
+    </data>
+    <data name="DisableButton" xml:space="preserve">
+        <value>Выключить</value>
+    </data>
+    <data name="AppearancePageTitle" xml:space="preserve">
+        <value>Внешний вид</value>
+    </data>
+    <data name="AppearancePageDescription" xml:space="preserve">
+        <value>здесь можно изменить внешний вид системы</value>
+    </data>
+    <data name="TweakSecondsTaskbarDescription" xml:space="preserve">
+        <value>Включить отображение секунд во времени на панели задач?</value>
+    </data>
+    <data name="TweakHiddenFilesAndFoldersDescription" xml:space="preserve">
+        <value>Включить отображение скрытых файлов и папок?</value>
+    </data>
+    <data name="TweakFileExtensionDisplayDescription" xml:space="preserve">
+        <value>Включить отображение расширения файлов?</value>
+    </data>
+    <data name="SettingsPageLanguageTitle" xml:space="preserve">
+        <value>Язык</value>
+    </data>
+    <data name="SettingsPageLanguageDescription" xml:space="preserve">
+        <value>здесь вы можете изменить язык твикера</value>
+    </data>
+</root>

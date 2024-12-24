@@ -1,0 +1,56 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             xmlns:assets="clr-namespace:nttweakExtended.Assets"
+             xmlns:viewModels="clr-namespace:nttweakExtended.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="530" d:DesignHeight="400"
+             x:Class="nttweakExtended.GUI.Pages.MainMenuPage">
+        
+        <Design.DataContext>
+                <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+                <viewModels:LoadingIntroWindowViewModel />
+        </Design.DataContext>
+        
+        
+        <StackPanel Orientation="Vertical">
+       <TextBlock Text="{x:Static assets:Resources.MainPageTitle}"  TextAlignment="Left" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="24" HorizontalAlignment="Left" Margin="43,45,0,40"></TextBlock>
+                <TextBlock Text="{x:Static assets:Resources.MainPageDescription}" TextAlignment="Left" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="24" HorizontalAlignment="Left" Margin="43,0,275,0"></TextBlock>
+                <Button Click="GoToAppearancePage" Background="#2A2A2A" FontSize="18" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" HorizontalContentAlignment="Center" Height="40" Width="165" HorizontalAlignment="Left" CornerRadius="18" BorderBrush="#4B7EF7" BorderThickness="2" Margin="40,10,0,0"><Button.Styles>
+                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#3D3B3B"/>
+                                <Setter Property="BorderBrush" Value="#4B7EF7"/>
+                        </Style>
+                </Button.Styles>
+                        
+                        <StackPanel Orientation="Horizontal">
+                                <Image Source="avares://nttweakExtended/Assets/appearance.png" HorizontalAlignment="Left" Height="25" Width="25" Margin="0,0,5,0"></Image>
+                                <TextBlock Text="{x:Static assets:Resources.MainPageAppearanceButton}"></TextBlock>
+                        </StackPanel></Button>
+                
+                <Button Click="GoToAppsPage" Background="#2A2A2A" FontSize="18" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" HorizontalContentAlignment="Center" Height="40" Width="165" HorizontalAlignment="Left" CornerRadius="18" BorderBrush="#4B7EF7" BorderThickness="2" Margin="220,-40,0,0"><Button.Styles>
+                                <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                        <Setter Property="Background" Value="#3D3B3B"/>
+                                        <Setter Property="BorderBrush" Value="#4B7EF7"/>
+                                </Style>
+                        </Button.Styles>
+                        
+                        <StackPanel Orientation="Horizontal">
+                                <Image Source="avares://nttweakExtended/Assets/apps.png" HorizontalAlignment="Left" Height="25" Width="25" Margin="0,0,5,0"></Image>
+                                <TextBlock Text="{x:Static assets:Resources.MainPageAppsButton}"></TextBlock>
+                        </StackPanel></Button>
+            
+            <Button Background="#2A2A2A" Click="ReloadExplorer" FontSize="18" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" HorizontalContentAlignment="Center" Height="40" Width="250" HorizontalAlignment="Left" CornerRadius="18" BorderBrush="#4B7EF7" BorderThickness="2" Margin="40,65,0,0"><Button.Styles>
+                            <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                    <Setter Property="Background" Value="#3D3B3B"/>
+                                    <Setter Property="BorderBrush" Value="#4B7EF7"/>
+                            </Style>
+                    </Button.Styles>
+                        
+                    <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{x:Static assets:Resources.MainPageRestartExplorerButton}"></TextBlock>
+                    </StackPanel></Button>
+    </StackPanel>
+</UserControl>

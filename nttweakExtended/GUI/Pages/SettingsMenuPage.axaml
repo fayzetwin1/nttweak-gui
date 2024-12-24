@@ -1,0 +1,66 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:assets="clr-namespace:nttweakExtended.Assets"
+             mc:Ignorable="d" d:DesignWidth="550" d:DesignHeight="525"
+             x:Class="nttweakExtended.GUI.Pages.SettingsMenuPage">
+        <ScrollViewer>
+        <StackPanel Orientation="Vertical">
+       <TextBlock Text="{x:Static assets:Resources.SettingsPageTitle}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="24" HorizontalAlignment="Left" Margin="35,45,0,40"></TextBlock>
+                <TextBlock Text="{x:Static assets:Resources.SettingsPageDescription}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="16" Opacity="0.5" HorizontalAlignment="Left" Margin="35,-35,60,0"></TextBlock>
+                <TextBlock Text="{x:Static assets:Resources.SettingsPageLanguageTitle}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="18"  HorizontalAlignment="Left" Margin="35,10,60,0"></TextBlock>
+                <TextBlock Text="{x:Static assets:Resources.SettingsPageLanguageDescription}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="14" Opacity="0.5"  HorizontalAlignment="Left" Margin="35,5,60,0"></TextBlock>
+                <Button Background="#2A2A2A" FontSize="18" Click="RULanguageOnClick" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" HorizontalContentAlignment="Center" Height="40" Width="45" HorizontalAlignment="Left" CornerRadius="20" BorderBrush="#3D3B3B" BorderThickness="2" Margin="35,10,0,0"><Button.Styles>
+                                <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                        <Setter Property="Background" Value="#3D3B3B"/>
+                                        <Setter Property="BorderBrush" Value="#3D3B3B"/>
+                                </Style>
+                        </Button.Styles>
+                        
+                        <StackPanel Orientation="Horizontal">
+                                <Image Source="avares://nttweakExtended/Assets/russia.png" HorizontalAlignment="Center" Height="25" Width="25"></Image>
+                        </StackPanel></Button>
+                <Button Background="#2A2A2A" FontSize="18" Click="ENLanguageOnClick" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" HorizontalContentAlignment="Center" Height="40" Width="45" HorizontalAlignment="Left" CornerRadius="20" BorderBrush="#3D3B3B" BorderThickness="2" Margin="90,-40,0,0"><Button.Styles>
+                                <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                        <Setter Property="Background" Value="#3D3B3B"/>
+                                        <Setter Property="BorderBrush" Value="#3D3B3B"/>
+                                </Style>
+                        </Button.Styles>
+                        
+                        <StackPanel Orientation="Horizontal">
+                                <Image Source="avares://nttweakExtended/Assets/usa.png" HorizontalAlignment="Center" Height="25" Width="25"></Image>
+                        </StackPanel></Button>
+                
+                
+                    
+            
+            <TextBlock Text="{x:Static assets:Resources.InfoAboutAppTitle}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="24" HorizontalAlignment="Left" Margin="35,45,0,40"></TextBlock>
+            <TextBlock Text="{x:Static assets:Resources.InfoAboutAppDescription}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="16" Opacity="0.5" HorizontalAlignment="Left" Margin="35,-35,60,0"></TextBlock>
+            <TextBlock Text="{x:Static assets:Resources.InfoAboutAppVersionApp}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="16" HorizontalAlignment="Left" Margin="35,0,60,0"></TextBlock>
+            <TextBlock Text="{x:Static assets:Resources.InfoAboutAppAuthor}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="16" HorizontalAlignment="Left" Margin="35,0,60,0"></TextBlock>
+            <TextBlock Text="{x:Static assets:Resources.InfoAboutAppLinks}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="16" HorizontalAlignment="Left" Margin="35,15,100,0"></TextBlock>
+            <Button Background="#2A2A2A" Click="GithubOnClick" FontSize="18" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" HorizontalContentAlignment="Center" Height="40" Width="45" HorizontalAlignment="Left" CornerRadius="25" BorderBrush="#3D3B3B" BorderThickness="2" Margin="35,7,0,0"><Button.Styles>
+                            <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                    <Setter Property="Background" Value="#3D3B3B"/>
+                                    <Setter Property="BorderBrush" Value="#3D3B3B"/>
+                            </Style>
+                    </Button.Styles>
+                        
+                    <StackPanel Orientation="Horizontal">
+                            <Image Source="avares://nttweakExtended/Assets/github.png" HorizontalAlignment="Center" Height="25" Width="25"></Image>
+                    </StackPanel></Button>
+            <TextBlock Text="{x:Static assets:Resources.InfoAboutAppSupportAuthor}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="16" HorizontalAlignment="Left" Margin="35,15,100,0"></TextBlock>
+            <Button Background="#2A2A2A" Click="DonationAlertsOnClick" FontSize="18" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" HorizontalContentAlignment="Center" Height="40" Width="165" HorizontalAlignment="Left" CornerRadius="25" BorderBrush="#3D3B3B" BorderThickness="2" Margin="35,7,0,0"><Button.Styles>
+                            <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                    <Setter Property="Background" Value="#3D3B3B"/>
+                                    <Setter Property="BorderBrush" Value="#3D3B3B"/>
+                            </Style>
+                    </Button.Styles>
+                        
+                    <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="DonationAlerts"></TextBlock>
+                            
+                    </StackPanel></Button>
+                    </StackPanel>  </ScrollViewer>  
+</UserControl>

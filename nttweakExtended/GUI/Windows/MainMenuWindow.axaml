@@ -1,0 +1,112 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:windows="clr-namespace:nttweakExtended.GUI.Windows"
+        mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="400"
+        x:Class="nttweakExtended.MainMenuWindow"
+        Background="Transparent"
+        ExtendClientAreaToDecorationsHint="True"
+        WindowStartupLocation="CenterScreen"
+        TransparencyLevelHint="AcrylicBlur"
+        CanResize="False"
+        Width="640"
+        Height="400"
+        Title="NTTweak Extended">
+        
+        <DockPanel>
+                <Grid>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                        
+                        <windows:BackgroundWindow HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ZIndex="-1"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                        
+                <Border Background="#232323" Width="70" Height="400" CornerRadius="15,0,0,15" Opacity="0.4" HorizontalAlignment="Left"></Border> <!-- Width="44" Height="150" Margin="13.2,-4,0,0" -->
+                <Button Background="#2A2A2A" Click="GoToMainPage" Foreground="#2A2A2A" BorderThickness="1" BorderBrush="#2A2A2A" Height="40" Width="40" CornerRadius="18" Margin="15,-105,0,0">
+                        <Button.Styles>
+                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#3D3B3B"/>
+                        </Style>
+                        <Style Selector="Button:pressed /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#2A2A2A"/>
+                        </Style>
+                </Button.Styles>
+                        <StackPanel Orientation="Horizontal">
+                                <Image Source="avares://nttweakExtended/Assets/home.png" Height="25" Width="25" Margin="-1.5,0,0,0"></Image>
+                        </StackPanel>
+                </Button>
+                
+                <Button Background="#2A2A2A" Click="GoToAppsPage" Height="40" Width="40" BorderBrush="#2A2A2A" CornerRadius="18" Margin="15,-5,0,0">
+                        <Button.Styles>
+                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#3D3B3B"/>
+                        </Style>
+                        <Style Selector="Button:pressed /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#2A2A2A"/>
+                        </Style>
+                </Button.Styles>
+                        <StackPanel Orientation="Horizontal">
+                                <Image Source="avares://nttweakExtended/Assets/apps.png" Width="25" Height="25" Margin="-1.5,0,0,0"></Image>
+                        </StackPanel>
+                </Button>
+                <Button Background="#2A2A2A" Click="GoToAppearancePage" Height="40" Width="40" BorderBrush="#2A2A2A" CornerRadius="18" Margin="15,95,0,0">
+                        <Button.Styles>
+                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#3D3B3B"/>
+                        </Style>
+                        <Style Selector="Button:pressed /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#2A2A2A"/>
+                        </Style>
+                </Button.Styles>
+                        <StackPanel Orientation="Horizontal">
+                                <Image Source="avares://nttweakExtended/Assets/appearance.png" Height="25" Width="25" Margin="-2,0,0,0"></Image>
+                        </StackPanel>
+                </Button>
+                        <Button Background="#2A2A2A" Click="GoToSettingsPage" Height="40" Width="40" BorderBrush="#2A2A2A" CornerRadius="18" Margin="15,335,0,0">
+                                <Button.Styles>
+                                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                                <Setter Property="Background" Value="#3D3B3B"/>
+                                        </Style>
+                                        <Style Selector="Button:pressed /template/ ContentPresenter">
+                                                <Setter Property="Background" Value="#2A2A2A"/>
+                                        </Style>
+                                </Button.Styles>
+                                <StackPanel Orientation="Horizontal">
+                                        <Image Source="avares://nttweakExtended/Assets/settings.png" Height="25" Width="25" Margin="-2,0,0,0"></Image>
+                                </StackPanel>
+                        </Button>
+                
+                <!-- <TextBlock Text="Добро пожаловать в NTTweak Extended!" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="24" HorizontalAlignment="Center" Margin="0,45,0,40"></TextBlock>
+                <TextBlock Text="С чего начнем?" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="24" HorizontalAlignment="Center" Margin="0,100,275,0"></TextBlock>
+                <Button Background="#2A2A2A" FontSize="18" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" HorizontalContentAlignment="Center" Height="40" Width="165" HorizontalAlignment="Center" CornerRadius="18" BorderBrush="#4B7EF7" BorderThickness="2" Margin="-280,0,0,0"><Button.Styles>
+                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#3D3B3B"/>
+                                <Setter Property="BorderBrush" Value="#4B7EF7"/>
+                        </Style>
+                </Button.Styles>
+                        
+                        <StackPanel Orientation="Horizontal">
+                                <Image Source="avares://nttweakExtended/Assets/appearance.png" HorizontalAlignment="Left" Height="25" Width="25"></Image>
+                                <TextBlock Text=" Внешний вид"></TextBlock>
+                        </StackPanel></Button>
+                
+                <Button Background="#2A2A2A" FontSize="18" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" HorizontalContentAlignment="Center" Height="40" Width="165" HorizontalAlignment="Center" CornerRadius="18" BorderBrush="#4B7EF7" BorderThickness="2" Margin="80,0,0,0"><Button.Styles>
+                                <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                        <Setter Property="Background" Value="#3D3B3B"/>
+                                        <Setter Property="BorderBrush" Value="#4B7EF7"/>
+                                </Style>
+                        </Button.Styles>
+                        
+                        <StackPanel Orientation="Horizontal">
+                                <Image Source="avares://nttweakExtended/Assets/apps.png" HorizontalAlignment="Left" Height="25" Width="25"></Image>
+                                <TextBlock Text=" Приложения"></TextBlock>
+                        </StackPanel></Button> -->
+                
+                <ContentControl Name="PageContentPanel" Grid.Column="1"></ContentControl>
+                
+                
+        </Grid>
+        </DockPanel>
+</Window>

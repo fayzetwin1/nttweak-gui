@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:system="clr-namespace:System;assembly=System.Runtime"
+        xmlns:assets="clr-namespace:nttweakExtended.Assets"
+        xmlns:viewModels="clr-namespace:nttweakExtended.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="200"
+        x:Class="nttweakExtended.LoadingIntroWindow"
+        Title="NTTweak Extended"
+        Background="Transparent"
+        x:DataType="viewModels:LoadingIntroWindowViewModel"
+        ExtendClientAreaToDecorationsHint="True"
+        WindowStartupLocation="CenterScreen"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="-1"
+        Height="200"
+        Width="400">
+    
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <viewModels:LoadingIntroWindowViewModel />
+    </Design.DataContext>
+    
+    <Panel>
+                <Border Background="#111113" CornerRadius="15"></Border>
+                <TextBlock Text="NTTweak" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Bold" FontSize="36" HorizontalAlignment="Center" Margin="0,45,0,40"></TextBlock>
+                <ProgressBar Name="LoadingProgressBar" Width="300" Height="10" Minimum="0" Maximum="100"
+                             Foreground="#4B7EF7" Margin="0,60,0,40" IsIndeterminate="True"></ProgressBar>
+                <TextBlock Text="wait a second..." FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Light" FontSize="16" HorizontalAlignment="Center" Margin="0,125,0,40" Opacity="0.5"></TextBlock>
+            <TextBlock Text="{x:Static assets:Resources.WelcomeText}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Light" FontSize="16" HorizontalAlignment="Center" Margin="0,15,0,40" Opacity="0.5"></TextBlock>
+            
+        </Panel>
+</Window>

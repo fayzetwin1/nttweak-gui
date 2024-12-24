@@ -1,0 +1,11 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="400"
+             x:Class="nttweakExtended.GUI.Windows.BackgroundWindow"
+             Background="Transparent"
+             Width="640"
+             Height="400">
+    <Border Background="#111113" CornerRadius="15" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="640"></Border>
+</UserControl>

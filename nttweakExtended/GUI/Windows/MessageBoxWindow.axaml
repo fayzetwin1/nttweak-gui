@@ -1,0 +1,54 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="550" d:DesignHeight="250"
+        x:Class="nttweakExtended.GUI.Windows.MessageBoxWindow"
+        Title="NTTweak Extended Warning" CanResize="False" Background="Transparent"
+        Width="550" Height="250" ExtendClientAreaToDecorationsHint="True"
+        WindowStartupLocation="CenterScreen"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="-1">
+        <Grid>
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Border Background="#303030" CornerRadius="15"></Border>
+                
+                <TextBlock  x:Name="MessageText" 
+                           TextWrapping="Wrap" 
+                           Margin="25,-85,10,10" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Center">pon123</TextBlock>
+                
+                
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,-70,0,10">
+                        <Button x:Name="YesButton" Width="75" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" Margin="5" Click="YesButtonOnClick" CornerRadius="20" BorderBrush="#3D3B3B" BorderThickness="2">
+                                <Button.Styles>
+                                <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                        <Setter Property="Background" Value="#3D3B3B"/>
+                                        <Setter Property="BorderBrush" Value="#3D3B3B"/>
+                                </Style>
+                        </Button.Styles>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <TextBlock Text="Yes" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold"></TextBlock> 
+                                </StackPanel>
+                        </Button>
+                        
+                        <Button x:Name="NoButton" Width="75" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" Margin="5" Click="NoButtonOnClick" CornerRadius="20" BorderBrush="#3D3B3B" BorderThickness="2">
+                                <Button.Styles>
+                                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                                <Setter Property="Background" Value="#3D3B3B"/>
+                                                <Setter Property="BorderBrush" Value="#3D3B3B"/>
+                                        </Style>
+                                </Button.Styles>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <TextBlock Text="No" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold"></TextBlock> 
+                                </StackPanel>
+                        </Button>
+                </StackPanel>
+        </Grid>
+</Window>

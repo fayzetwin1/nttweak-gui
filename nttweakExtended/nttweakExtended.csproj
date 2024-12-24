@@ -1,0 +1,77 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ActiproSoftware.Controls.Avalonia" Version="25.1.0" />
+        <PackageReference Include="ActiproSoftware.Controls.Avalonia.Pro" Version="25.1.0" />
+        <PackageReference Include="Avalonia" Version="11.2.1" />
+        <PackageReference Include="Avalonia.Desktop" Version="11.2.1" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.2.1" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.2.1" />
+        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+        <PackageReference Include="Avalonia.Diagnostics" Version="11.2.1">
+            <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+            <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="MessageBox.Avalonia" Version="3.2.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="GUI\Pages\LoadingIntroWindow.axaml.cs">
+        <DependentUpon>LoadingIntroWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="GUI\Pages\MainMenuWindow.axaml.cs">
+        <DependentUpon>MainMenuWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Assets\Resources.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Resources.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\Nunito-VariableFont_wght.ttf" />
+      <AvaloniaResource Include="Assets\nunitoDefault.ttf" />
+      <None Remove="Assets\Nunito-Italic-VariableFont_wght.ttf" />
+      <AvaloniaResource Include="Assets\nunitoItalic.ttf" />
+      <None Remove="Assets\appearanceMenuIcon.svg" />
+      <AvaloniaResource Include="Assets\appearanceMenuIcon.svg" />
+      <None Remove="Assets\appearance.png" />
+      <AvaloniaResource Include="Assets\appearance.png" />
+      <AvaloniaResource Include="Assets\apps.png" />
+      <None Remove="Assets\home.png" />
+      <AvaloniaResource Include="Assets\home.png" />
+      <None Remove="Assets\github.png" />
+      <AvaloniaResource Include="Assets\github.png" />
+      <None Remove="Assets\settings.png" />
+      <AvaloniaResource Include="Assets\settings.png" />
+      <None Remove="Assets\russia.png" />
+      <AvaloniaResource Include="Assets\russia.png" />
+      <None Remove="Assets\usa.png" />
+      <AvaloniaResource Include="Assets\usa.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Assets\Resources.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Assets\Resources.en-us.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Assets\Resources.ru.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+      </EmbeddedResource>
+    </ItemGroup>
+</Project>

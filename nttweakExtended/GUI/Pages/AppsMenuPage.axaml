@@ -1,0 +1,34 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:assets="clr-namespace:nttweakExtended.Assets"
+             mc:Ignorable="d" d:DesignWidth="550" d:DesignHeight="400"
+             x:Class="nttweakExtended.GUI.Pages.AppsMenuPage">
+    <StackPanel Orientation="Vertical">
+       <TextBlock Text="{x:Static assets:Resources.AppsPageTitle}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="24" HorizontalAlignment="Left" Margin="35,45,0,40"></TextBlock>
+                <TextBlock Text="{x:Static assets:Resources.AppsPageDescription}" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" FontSize="16" Opacity="0.5" HorizontalAlignment="Left" Margin="35,-35,60,0"></TextBlock>
+                <Button Background="#2A2A2A" Click="DiscordOnClick" FontSize="18" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" HorizontalContentAlignment="Center" Height="40" Width="165" HorizontalAlignment="Left" CornerRadius="18" BorderBrush="#4B7EF7" BorderThickness="2" Margin="35,10,0,0"><Button.Styles>
+                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Background" Value="#3D3B3B"/>
+                                <Setter Property="BorderBrush" Value="#4B7EF7"/>
+                        </Style>
+                </Button.Styles>
+                        
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Discord"></TextBlock>
+                        </StackPanel></Button>
+                
+                <Button Background="#2A2A2A" Click="TelegramOnClick" FontSize="18" FontFamily="avares://nttweakExtended/Assets/nunitoDefault.ttf#Nunito Semibold" HorizontalContentAlignment="Center" Height="40" Width="165" HorizontalAlignment="Left" CornerRadius="18" BorderBrush="#4B7EF7" BorderThickness="2" Margin="225,-40,0,0"><Button.Styles>
+                                <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                        <Setter Property="Background" Value="#3D3B3B"/>
+                                        <Setter Property="BorderBrush" Value="#4B7EF7"/>
+                                </Style>
+                        </Button.Styles>
+                        
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Telegram"></TextBlock>
+                        </StackPanel></Button>
+    </StackPanel>
+</UserControl>
+
