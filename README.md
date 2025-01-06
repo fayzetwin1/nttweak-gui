@@ -5,7 +5,7 @@ CLI version --> https://github.com/fayzetwin1/nttweak-core
 
 // RU
 
-В первую очередь, NTT является форком MakuTweaker'а ( https://adderly.fun/soft ) и фактически, GUI версия является просто оболочкой для CLI версии. 
+В первую очередь, NTT является форком MakuTweaker'а ( https://adderly.top/soft ) и фактически, GUI версия является просто оболочкой для CLI версии. 
 
 Написана на Avalonia UI, также требует .NET 8.0 ( https://dotnet.microsoft.com/en-us/download/dotnet/8.0 )
 
